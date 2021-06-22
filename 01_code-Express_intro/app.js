@@ -39,6 +39,7 @@ app.all('/', mainRouteHandler)
 
 function mainRouteHandler(request, response){
   // We don't want to use full path we ask the OS for relative path ... /Users/MS/Dev/Ironhack/PizzaBytes/m2-d02-class/01_code-Express_intro/app.js
+  console.log("hola");
   response.sendFile(path.join(__dirname, '/public/index.html'))
 }
 
