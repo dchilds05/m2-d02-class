@@ -33,4 +33,28 @@ function mainRouteHandler(request, response){
   response.send(`<h1>Hey you send me a request with the http verb ${request.method}</h1>`)
 }
 
+
+app.all('/hello', helloRouteHandler)
+
+function helloRouteHandler(request, response){
+  response.send(`<h1>Hello from my first Express.js app!</h1>`)
+}
+
+app.all('/students/helloFran', franHelloRouteHandler)
+
+function franHelloRouteHandler(request, response){
+  response.send(`<h1>Hello from Fran Express.js app!</h1>`)
+}
+
+app.all("/students/morgane", morganeRouteHandler)
+
+function morganeRouteHandler(request, response) {
+    response.send(`<h2>You are on Morgane's page!</h2>`)
+}
+
+app.all('/students/raul', raulrouteHandler)
+function raulrouteHandler(request, response) {
+  response.send(`<p>I've been bitten twice by a mosquito this morning ;( </p>`)
+}
+
 app.listen(3000)
