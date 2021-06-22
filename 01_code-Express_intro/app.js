@@ -7,8 +7,9 @@
  * 3. Import the newly installed express module (library)
  * 4. Setup the express.app()
  * 5. Tell express.app() what it need to respond to (set a URL route)
- * 6. Prepare the .html ang .img resourses
- * 7. Sart the express.app() so it "listens" to a port
+ * 6. Sart the express.app() so it "listens" to a port
+ * 7. Prepare the .html ang .img resourses
+ * 8. Route the files
  */
 
 // * 3. Import the newly installed express module (library)
@@ -29,5 +30,7 @@ function mainRouteHandler(request, response){
   // Just inspect the http verb in the console
   console.log(request.method)
   // Return some text to the user
-  response.send(`Hey you send me a request with the http verb ${request.method}`)
+  response.send(`<h1>Hey you send me a request with the http verb ${request.method}</h1>`)
 }
+
+app.listen(3000)
