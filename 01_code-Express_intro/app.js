@@ -9,14 +9,22 @@
  * 5. Tell express.app() what it need to respond to (set a URL route)
  * 6. Sart the express.app() so it "listens" to a port
  * 7. Prepare the .html ang .img resourses
- * 8. Route the files
+ * 8. Set static files serve
+ * 9. Route the files
  */
+
+// Library to build corect path strings for the OS
+const path = require('path')
 
 // * 3. Import the newly installed express module (library)
 const express = require('express')
 
 // * 4. Setup the express.app()
 const app = express()
+
+
+// * 8. Route the files
+app.use(express.static('public'))
 
 // * 5. Tell express.app() what it need to respond to (set a URL route)
 // Http verbs GET POST
@@ -26,7 +34,20 @@ const app = express()
 app.all('/', mainRouteHandler)
 // We path-match all URLS and all verbs
 
+//  * 7. Prepare the .html ang .img resourses
+// * 8. Route the files
+
 function mainRouteHandler(request, response){
+  // We don't want to use full path we ask the OS for relative path ... /Users/MS/Dev/Ironhack/PizzaBytes/m2-d02-class/01_code-Express_intro/app.js
+  response.sendFile(path.join(__dirname, '/public/index.html'))
+}
+
+
+
+app.listen(3000)
+
+
+/* function mainRouteHandler(request, response){
   // Just inspect the http verb in the console
   console.log(request.method)
   // Return some text to the user
@@ -58,3 +79,4 @@ function raulrouteHandler(request, response) {
 }
 
 app.listen(3000)
+*/
