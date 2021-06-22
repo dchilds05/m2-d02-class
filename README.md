@@ -1,38 +1,25 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Module X - Day X
+# Module 2 - Day 2
 
 
 ## Lab 
 
-[Link to LAB](# lab)
+[LAB | Express basic site](https://github.com/ironhack-labs/lab-express-basic-site)
 
 
 ## Class
 
-- [Link Topic 1](# .md Topic 1)
+- Express intro
 
-- [Link Topic 1] (# .md Topic 2)
-
-- [Link Topic 1] (# .md Topic 3)
-
-- etc...
+- AJAX Forms
 
 
 ## Self Guided
 
-[Link to Self Guided](# Self Guided)
-
-
-## Assesment 
-
-[Link to Assesment](# assesment)
+[SELF GUIDED | Intor to Node](https://github.com/ironhack-labs/lab-intro-node)
 
 
 ## Extra Resources
 
-- [Link to Extra Resource 1](# Extra Resources 1)
-
-- [Link to Extra Resource 2](# Extra Resources 2)
-
-- [Link to Extra Resource 3](# Extra Resources 3)
+TBD
